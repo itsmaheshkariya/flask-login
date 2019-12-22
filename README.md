@@ -25,6 +25,8 @@ Flask Login and Registration System through SQLite.
 ``` exit() ``` 
 ### Start Server
 ```flask run```
+### Open Browser
+http://localhost:5000
 
 
 ### Demo
