@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+{% block content %}
+<style>
+    body{
+        background: coral;
+    }
+.myblock{
+    border:1px solid black;
+    border-radius: 4%;
+    background: rgba(0,0,0,0.5);
+    margin-top:20%;
+    padding:3%;
+}
+.h1{
+    margin-bottom:5% ;
+    color:coral;
+}
+.mybtn{
+ background: rgba(0,0,0,0.5);
+}
+
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12"></div>
+        <div class="col-lg-6 col-md-6 col-sm-12 myblock">
+            <h1 class="h1">Signup Form</h1>
+            <form action="/signup" method="POST" class="form-group">
+                <div class="form-group">
+                    <input type="text" name="username" placeholder="Username" class="form-control">
+                </div>            
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-block btn-dark mybtn">Submit</button>
+                <a href="/login" class="btn btn-block btn-dark  mybtn link">Login</a>
+            </div>
+            </form>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12"></div>
+    </div>
+</div>
+
+
+{% endblock %}
